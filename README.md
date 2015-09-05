@@ -2,14 +2,14 @@
 `goo` is a simple version manager for Go
 
 ## Where does goo install versions of Go?
-`goo` install Go versions in `$HOME/.goo/`
+`goo` installs Go versions in `$HOME/.goo/`
 
 # Features
-* manages `$GOPATH`
-* manages `$GOROOT`
-* allows multiple versions of Go to be installed without conflict
-* auto expand Github repositories
-* cross platform
+* Manages `$GOPATH`
+* Manages `$GOROOT`
+* Allows multiple versions of Go to be installed without conflict
+* Auto-expand Github repositories
+* Cross platform
 
 # Installation
 Download the latest `goo` binary [here](/releases/latest) and place it in `$HOME/.goo/bin`
