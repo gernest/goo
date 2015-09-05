@@ -1,123 +1,105 @@
 # goo [![Build Status](https://travis-ci.org/gernest/goo.svg)](https://travis-ci.org/gernest/goo)
+`goo` is a simple version manager for Go
 
-goo is a commandline tool that makes it easier to develop with golang.
-It simplifies installation, configuration and use of golang tool chains.
+## Where does goo install versions of Go?
+`goo` install Go versions in `$HOME/.goo/`
 
-The goo tool  wraps the golang go command, enabling you to have
-full power of golang with minimal efforts.
-
-Goo manages GOROOT, and GOPATH for you. And you don't have to worry about permissions
-Infact goo recomends  not to be run with root permissions, only that your home directory
-is writable.
-
-Goo supports multiple versions of golang. Meaning you can test your code against multiple versions
-of golang locally easily and secure with goo.
-
-## Where is the go toolchain installed?
-
-Goo install go versions tn your home directory i.e $HOME/.goo. So you can just delete the
-directory if you dont want to mess with golang anymore.
-
-# features
-
-* manages GOPATH
-* manages GOROOT
-* Install/uninstall multibple go versions
-* auto expand github repositories.
-* forget about .bashrc, .profile and all the files you would need to edit.
-* cross platform(Only tested on linux, testing on other platform is underway but you can help with that.)
-'
+# Features
+* manages `$GOPATH`
+* manages `$GOROOT`
+* allows multiple versions of Go to be installed without conflict
+* auto expand Github repositories
+* cross platform
 
 # Installation
+Download the latest `goo` binary [here](/releases/latest) and place it in `$HOME/.goo/bin`
 
-download latest binaries [download](/releases/latest)
+Add the installation path to your `$PATH`:
+```Bash
+$ export PATH=$PATH:$HOME/.goo/bin
+```
 
-Put the binary in your system PATH or just somewhere easy enough to access with your console.
+Note: If you already have a local Go installation, you can optionally install via `go get`:
+```Bash
+$ go get github.com/gernest/goo
+```
 
-And incase you have already go installed and wish to test or use goo too you can go get the project
+## Usage
 
-	go get github.com/gernest/goo
-
-## How to use.
-
-### `goo` commands
-
-Installing latest go version
+Installing latest Go version:
+```Bash
+$ goo install latest
+```
 	
-	goo install latest
+Install specific Go version:
+```Bash
+$ goo install 1.5
+```
 	
-Install specific go version
-
-	goo install 1.5
+Get the list of available Go versions for download:
+```Bash
+$ goo show all
+```
 	
-Get the list of available go versions for download
+Get the list of installed Go versions:
+```Bash
+$ goo show i
+```
 
-	goo show all
+Determine which version of Go is active:
+```Bash
+$ goo which go
+```
+
+Determine current GOPATH:
+```Bash
+$ goo which gopath
+```
+
+The Go tool and all of its power is exposed via:
+```Bash
+$ goo go
+```
+
+For example, building a project:
+```Bash
+$ goo go build
+```
+
+### Help with packages from Github
+`goo` helps you work with Github packages more easily.
+
+* with `go`:
+```Bash
+$ go get github.com/gernest/goo
+```
+
+* with `goo`:
+```Bash
+$ goo get gernest/goo
+```
 	
-Get the list of installed go version
-
-	goo show i
+And:
+* with `go`:
+```Bash
+$ go test github.com/gernest/goo
+```
 	
+* with `goo`:
+```Bash
+$ goo test gernest/goo
+```
 
-Which version of go you are currently using
-
-	goo which go
-
-Which GOPATH you are curretly using
-
-	goo which gopath
-
-
-
-### Working with your go project.
-
-The go tool and all of its power is exposed via
-
-	goo go
-	
-e.g building a project
-
-	goo go build
-	
-
-
-### Help with packages from github
-
-goo helps you work with github packages easily
-
-Getting a project
-
-* with go
-
-	go get github.com/gernest/goo
-	
-* with goo
-
-	goo get gernest/goo
-	
-Testing a project
-
-* with go
-
-	go test github.com/gernest/goo
-	
-* with goo
-
-	goo test gernest/goo
-
-
-
-There is much more, you can see all the usage and all the commands by running
-
-	goo 
+`goo` provides a lot more power than documented above — to see the full list of usage options:
+```Bash
+$ goo
+```
 
 # Author
-
 Geofrey Ernest <geofreyernest@live.com>
 
 
 # Contributing
-
 Fork and submit a pull request.
 
-Enjoy
+Enjoy!
