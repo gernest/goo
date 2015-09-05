@@ -51,7 +51,7 @@ Determine which version of Go is active:
 $ goo which go
 ```
 
-Determine current GOPATH:
+Determine current `$GOPATH`:
 ```Bash
 $ goo which gopath
 ```
@@ -68,24 +68,21 @@ $ goo go build
 
 ### Help with packages from Github
 `goo` helps you work with Github packages more easily.
-
-* with `go`:
 ```Bash
 $ go get github.com/gernest/goo
 ```
+vs:
 
-* with `goo`:
 ```Bash
 $ goo get gernest/goo
 ```
 	
 And:
-* with `go`:
 ```Bash
 $ go test github.com/gernest/goo
 ```
-	
-* with `goo`:
+vs:
+
 ```Bash
 $ goo test gernest/goo
 ```
