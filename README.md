@@ -26,6 +26,7 @@ $ go get github.com/gernest/goo
 
 ## Usage
 
+### Basic
 Installing latest Go version:
 ```Bash
 $ goo install latest
@@ -66,27 +67,18 @@ For example, building a project:
 $ goo go build
 ```
 
-### Help with packages from Github
-`goo` helps you work with Github packages more easily.
-```Bash
-$ go get github.com/gernest/goo
-```
-vs:
-
+### Working with Github packages
+`goo` helps you work with Github packages more easily:
 ```Bash
 $ goo get gernest/goo
 ```
 	
 And:
 ```Bash
-$ go test github.com/gernest/goo
-```
-vs:
-
-```Bash
 $ goo test gernest/goo
 ```
 
+### Additional features
 `goo` provides a lot more power than documented above — to see the full list of usage options:
 ```Bash
 $ goo
