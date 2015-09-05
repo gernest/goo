@@ -1,0 +1,8 @@
+command use helps you switch between different go verssions. The go version you want
+to use must be already installed by `goo install` command.
+
+The format is goo use <go version>
+ 
+to switch to go 1.5
+
+	goo use 1.5
