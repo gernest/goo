@@ -67,8 +67,8 @@ For example, building a project:
 $ goo go build
 ```
 
-### Working with Github packages
-`goo` helps you work with Github packages more easily:
+### Github
+`goo` provides simpler syntax when working with Github packages:
 ```Bash
 $ goo get gernest/goo
 ```
