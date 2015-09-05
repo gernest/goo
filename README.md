@@ -1,6 +1,4 @@
-# goo
-
-# WIN AT GOLANG WITH GO.
+# goo [![Build Status](https://travis-ci.org/gernest/goo.svg)](https://travis-ci.org/gernest/goo)
 
 goo is a commandline tool that makes it easier to develop with golang.
 It simplifies installation, configuration and use of golang tool chains.
