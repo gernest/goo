@@ -111,6 +111,9 @@ There is much more, you can see all the usage and all the commands by running
 
 	goo 
 
+# Attention!!!
+This is still in early stage, so before you start complaining why don't try to make it better.'
+
 # Author
 
 Geofrey Ernest <geofreyernest@live.com>
